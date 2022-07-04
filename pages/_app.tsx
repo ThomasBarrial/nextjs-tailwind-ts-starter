@@ -14,9 +14,9 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     return (
         <AppContext.Provider value={app}>
             <Provider store={store}>
-                <div className="">
+         
                     <Component {...pageProps} />
-                </div>
+           
             </Provider>
         </AppContext.Provider>
     );
